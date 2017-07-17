@@ -1,0 +1,583 @@
+@font-face {
+			font-family: "TimesNewRomanRegular";
+			src: url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.eot");
+			src: url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.woff") format("woff"),
+			url("../fonts/TimesNewRomanRegular/TimesNewRomanRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "TimesNewRomanBold";
+			src: url("../fonts/TimesNewRomanBold/TimesNewRomanBold.eot");
+			src: url("../fonts/TimesNewRomanBold/TimesNewRomanBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/TimesNewRomanBold/TimesNewRomanBold.woff") format("woff"),
+			url("../fonts/TimesNewRomanBold/TimesNewRomanBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "TimesNewRomanItalic";
+			src: url("../fonts/TimesNewRomanItalic/TimesNewRomanItalic.eot");
+			src: url("../fonts/TimesNewRomanItalic/TimesNewRomanItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/TimesNewRomanItalic/TimesNewRomanItalic.woff") format("woff"),
+			url("../fonts/TimesNewRomanItalic/TimesNewRomanItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+
+	@font-face {
+			font-family: "TimesNewRomanBoldItalic";
+			src: url("../fonts/TimesNewRomanBoldItalic/TimesNewRomanBoldItalic.eot");
+			src: url("../fonts/TimesNewRomanBoldItalic/TimesNewRomanBoldItalic.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/TimesNewRomanBoldItalic/TimesNewRomanBoldItalic.woff") format("woff"),
+			url("../fonts/TimesNewRomanBoldItalic/TimesNewRomanBoldItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font: 100%/1.3em TimesNewRoman;
+    color: #0a0a0a;
+    background-color: #FFF;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .cols{
+    float: left;
+    margin: 0 0 1em;
+    padding: 0 1em;
+    text-align: justify;
+}
+
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clear:before,
+.clear:after{
+    content: " ";
+    display: table;
+}
+
+.row:after,
+.clear:after{
+    clear: both;
+}
+
+.block.cols.col-2{
+    margin: 0;
+}
+
+.block.cols.col-12{
+    margin: 0;
+}
+
+
+@media screen and (max-width: 599px) { 
+
+.container .cols.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{width: 100%;}
+    
+.menu_tablet{
+display: none;
+margin: 0;
+} 
+    
+.menu_pc{
+display: none;
+} 
+    
+.header_background {  
+    width: 100%;
+    height: 100vh;
+    background-position: center center;  
+    background-size: cover;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(../img/header-mobile.jpg);
+}
+
+.inner {
+    position: relative;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+    padding: 50px 0 0 20px;
+}
+    
+.header_background .inner h1{
+    line-height:1.1em;
+    font-size: 2em;
+    }
+    
+    
+.logo img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  display: inline-block;
+  width: auto;
+}
+    
+#header {
+width: 100%;
+height:70px;
+background:#fff;
+position: fixed;
+box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+z-index: 1001;
+}
+   
+.row_menu{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h2{
+font-family: TimesNewRomanRegular;
+font-size: 1.8em;
+display: table-cell;
+color: #F58612;
+text-align: center;
+line-height:1.1em;
+}
+
+.text{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}    
+    
+.text p{
+    text-indent: 20px;
+    color: #0a0a0a;
+    
+} 
+
+ul.liko li.liko {
+    height: 2.7em;
+    background:url('../img/marker.png') 30px center no-repeat;
+}
+    
+ ul.liko li {
+    display: inline-block;
+    float: left;
+    clear: both;
+    text-align: left;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom:15px;
+    padding-left: 100px;
+}
+    
+.Map{
+    border: 1px solid #48c0c2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    padding: 10px;
+    
+}
+
+.background{
+    background: #f5f5f5;
+    padding: 20px;
+}
+    
+.map .background span{
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    font-size: 1em;
+}
+    
+.map .background span.orange{
+   color: #F58612;
+}
+    
+.map .background span a{
+   color: #F58612;
+}
+    
+.footer{
+    background-color: #F58612;
+}
+    
+.footer.cols.col-12{
+    margin: 0;
+    padding: 1em;
+    }
+    
+.footer span{
+        color: #ffffff;
+}
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) { 
+
+.container .cols.col-1,
+.col-2,
+.col-3
+.col-4{width: 33.333333%;}
+.col-5,
+.col-6,
+.col-7,
+.col-8{width: 66.66666667%;}
+.col-9,
+.col-10,
+.col-11,
+.col-12{width: 100%;}
+  
+.block_2.cols.col-2{
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+    
+.menu_phone{
+    display: none;
+}
+      
+.menu_block{
+ margin-top: 4em;       
+}
+        
+
+.header_background {  
+    width: 100%;
+    height: 100vh;
+    background-position: center center; 
+    background: url(../img/header-mobile.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.inner {
+    position: relative;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+    padding: 50px 0 0 20px;
+}
+    
+.header_background .inner h1{
+    line-height:1.1em;
+    font-size: 2.8em;
+    }
+    
+.logo img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 49px;
+  display: inline-block;
+  width: auto;
+}
+    
+#header {
+width: 100%;
+height:70px;
+background:#fff;
+position: fixed;
+box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+z-index: 1001;
+}
+   
+.row_menu{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h2{
+font-family: TimesNewRomanRegular;
+font-size: 1.8em;
+display: table-cell;
+color: #F58612;
+text-align: center;
+line-height:1.1em;
+}
+
+.text{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}    
+    
+.text p{
+    text-indent: 20px;
+    color: #0a0a0a;
+    
+} 
+
+ul.liko li.liko {
+    height: 2.7em;
+    background:url('../img/marker.png') 30px center no-repeat;
+}
+    
+ ul.liko li {
+    display: inline-block;
+    float: left;
+    clear: both;
+    text-align: left;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom:15px;
+    padding-left: 100px;
+}
+    
+.Map{
+    border: 1px solid #48c0c2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    padding: 10px;
+    
+}
+
+.background{
+    background: #f5f5f5;
+    padding: 20px;
+}
+    
+.map .background span{
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    font-size: 1em;
+}
+    
+.map .background span.orange{
+   color: #F58612;
+}
+    
+.map .background span a{
+   color: #F58612;
+}
+    
+.footer{
+    background-color: #F58612;
+}
+    
+.footer.cols.col-12{
+    margin: 0;
+    padding: 1em;
+    }
+    
+.footer span{
+        color: #ffffff;
+}
+    
+}
+
+@media screen and (min-width: 1025px) { 
+
+.container .cols.col-1{width: 8.3333333333333332%;}
+.col-2{width: 16.66666667%;}
+.col-3{width: 25%;}
+.col-4{width: 33.333333333%;}
+.col-5{width: 41.666666667%;}
+.col-6{width: 50%;}
+.col-7{width: 58.333333332%;}
+.col-8{width: 66.66666666%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33333333%;}
+.col-11{width: 91.666666667%%;}
+.col-12{width: 100%;}
+    
+.menu_phone{
+    display: none;
+}
+.menu_tablet{
+    display: none;
+}
+      
+.menu_block{
+ margin-top: 4em;       
+}
+        
+
+.header_background {  
+    width: 100%;
+    height: 100vh;
+    background-position: center center;  
+    background-size: cover;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(../img/header.jpg);
+}
+
+.inner {
+    position: relative;
+    padding: 45px 0 0;
+    margin: 0 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+    width: 720px;
+    padding: 50px 0 0;
+}
+    
+.header_background .inner h1{
+    line-height:1.1em;
+    font-size: 3em;
+    }
+    
+.logo img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 80px;
+  display: inline-block;
+  width: auto;
+    float: left;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -5000px;
+}
+    
+#header {
+width: 100%;
+height:100px;
+background:#fff;
+position: fixed;
+box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
+z-index: 1;
+}
+   
+.row_menu{
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+h2{
+font-family: TimesNewRomanRegular;
+font-size: 1.8em;
+display: table-cell;
+color: #F58612;
+text-align: center;
+line-height:1.1em;
+}
+
+.text{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}    
+    
+.text p{
+    text-indent: 20px;
+    color: #0a0a0a;
+    
+} 
+
+ul.liko li.liko {
+    height: 2.7em;
+    background:url('../img/marker.png') 30px center no-repeat;
+}
+    
+ ul.liko li {
+    display: inline-block;
+    float: left;
+    clear: both;
+    text-align: left;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom:15px;
+    padding-left: 100px;
+}
+    
+.Map{
+    border: 1px solid #48c0c2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    padding: 10px;
+    
+}
+
+.background{
+    background: #f5f5f5;
+    padding: 20px;
+}
+    
+.map .background span{
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    font-size: 1em;
+}
+    
+.map .background span.orange{
+   color: #F58612;
+}
+    
+.map .background span a{
+   color: #F58612;
+}
+    
+.footer{
+    background-color: #F58612;
+}
+    
+.footer.cols.col-12{
+    margin: 0;
+    padding: 1em;
+    }
+    
+.footer span{
+        color: #ffffff;
+}
+    
+.block_2.cols.col-2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+    
+}
+
+
+.right :after{
+  content: "моб.тел/viber: +375 (29) 174-14-14 факс: +375 (17) 322-32-32 skype: 1741414@aapbel.by г. Минск, ул. Харьковская, д. 14а, офис 306";
+  text-align: right;
+  float: right;
+  height: 100px;
+  display: inline-block;
+}
