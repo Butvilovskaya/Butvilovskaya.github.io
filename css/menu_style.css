@@ -203,7 +203,6 @@ a:hover{color:#BA0707;text-decoration:underline;}
         background:#f5f5f5;
         color:#0a0a0a;
         text-decoration:none;
-        z-index: 110;
         height: 70px;  
     }
     
@@ -214,8 +213,7 @@ a:hover{color:#BA0707;text-decoration:underline;}
     border-radius: 10px 10px 0 0;
     }
     
-    .mobile-menu:after {
-    content: "\f0d7";
+.fa{
     font-size: 18px;
     color: #e6790a;
     margin-left: 10px;
